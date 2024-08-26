@@ -1,0 +1,161 @@
+/* General Reset and Basic Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #283593; /* Deep blue */
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffeb3b; /* Yellow accent */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Yellow accent */
+}
+
+/* Dashboard Section */
+.dashboard {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.upload-section, .statistics-section, .media-gallery {
+    margin-bottom: 40px;
+}
+
+.upload-section h2, .statistics-section h2, .media-gallery h2 {
+    font-size: 2rem;
+    color: #283593; /* Deep blue */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+}
+
+input[type="file"], input[type="text"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.btn {
+    background-color: #ffeb3b; /* Yellow accent */
+    color: #283593; /* Deep blue */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #fbc02d; /* Slightly darker yellow */
+}
+
+/* Statistics Section */
+.stats-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.stats-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.stats-card h3 {
+    font-size: 1.5rem;
+    color: #283593; /* Deep blue */
+}
+
+.stats-card p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Media Gallery Section */
+.media-gallery {
+    padding: 20px;
+}
+
+.media-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.media-item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.media-item video, .media-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.media-item h3 {
+    font-size: 1.2rem;
+    color: #283593; /* Deep blue */
+}
+
+.media-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stats-cards {
+        flex-direction: column;
+    }
+
+    .stats-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

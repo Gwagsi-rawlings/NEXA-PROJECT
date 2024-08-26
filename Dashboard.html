@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="User dashboard for managing uploaded media and viewing statistics.">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css"> <!-- Your main stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">User Dashboard</div>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Artisthub.html">Artist HUB</a></li>
+                <li><a href="Network.html">Network Portal</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section id="Dashboard">
+    <main class="dashboard">
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Media Content</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="video-file">Upload Video:</label>
+                <input type="file" id="video-file" name="video-file" accept="video/*" required>
+                
+                <label for="media-file">Upload Media (Images, Audio):</label>
+                <input type="file" id="media-file" name="media-file" accept="image/*,audio/*">
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4"></textarea>
+
+                <button type="submit" class="btn">Upload</button>
+            </form>
+        </section>
+    </section>
+
+        <!-- Statistics Section -->
+        <section class="statistics-section">
+            <h2>Media Statistics</h2>
+            <div class="stats-cards">
+                <div class="stats-card">
+                    <h3>Total Likes</h3>
+                    <p id="total-likes">0</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Total Comments</h3>
+                    <p id="total-comments">0</p>
+                </div>
+                <div class="stats-card">
+                    <h3>Total Shares</h3>
+                    <p id="total-shares">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Gallery Section -->
+        <section class="media-gallery">
+            <h2>My Uploaded Media</h2>
+            <div id="media-list" class="media-list">
+                <!-- Media items will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

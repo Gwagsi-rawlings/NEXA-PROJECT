@@ -1,0 +1,207 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* General Events Section Styling */
+.events {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Header Section */
+.header {
+    padding: 10px 20px;
+    font-size: 3rem;
+    background-color: #dfdede;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    /*color: #ffffff; /* Yellow accent */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    /*color: #fff;*/
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Yellow accent */
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icons .search-icon, .nav-icons .language-icon {
+    /*color: #fff;*/
+    font-size: 1.2rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/* Event Cards Styling */
+.events-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+}
+
+.event-details {
+    padding: 20px;
+    text-align: left;
+}
+
+.event-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.event-date {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.event-register-button {
+    display: inline-block;
+    background-color: #f9a825;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-register-button:hover {
+    background-color: #c38800;
+}
+
+/* Registration Form Styling */
+.registration-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.registration-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscribe-button {
+    background-color: #f9a825;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #c38800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}

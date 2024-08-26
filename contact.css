@@ -1,0 +1,223 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+/* Header Section */
+.header {
+    padding: 10px 20px;
+    font-size: 3rem;
+    background-color: #dfdede;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    /*color: #ffffff; /* Yellow accent */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    /*color: #fff;*/
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b; /* Yellow accent */
+}
+
+.nav-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-icons .search-icon, .nav-icons .language-icon {
+    /*color: #fff;*/
+    font-size: 1.2rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: #f9a825;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #c38800;
+}
+
+/* Social Media Links Styling */
+.social-media {
+    margin-bottom: 30px;
+}
+
+.social-media h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #f9a825;
+}
+
+/* Newsletter Signup Styling */
+.newsletter-signup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+}
+
+.newsletter-signup h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.newsletter-signup .form-group {
+    margin-bottom: 15px;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.subscribe-button {
+    background-color: #f9a825;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: #c38800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form,
+    .newsletter-signup {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icon {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+}
